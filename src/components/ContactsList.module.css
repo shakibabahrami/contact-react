@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  max-width: 900px;
+  margin-top: 30px;
+  color: #83497b;
+  width: 100%;
+}
+.container li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  background-color: #83497b25;
+}
