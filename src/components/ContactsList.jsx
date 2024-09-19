@@ -2,32 +2,23 @@ import React from "react";
 import Styles from "./ContactsList.module.css";
 import ContactItem from "./ContactItem";
 
-function ContactsList({ contacts, setContacts }) {
-  console.log(contacts);
-
-  const mockData = [
-    {
-      id: "1",
-      name: "shakiba",
-      lastName: "bahrami",
-      email: "shakibabahrami@gmail.com",
-      phone: "09333490958",
-    },
-    {
-      id: "2",
-      name: "sara",
-      lastName: "ahmadi",
-      email: "saraahmadifarin@gmail.com",
-      phone: "09331254569",
-    },
-    {
-      id: "3",
-      name: "maryam",
-      lastName: "rezaei",
-      email: "maryamrezaei@gmail.com",
-      phone: "09358625520",
-    },
-  ];
+function ContactsList({
+  contacts,
+  setContacts,
+  showCheckbox,
+  setSelectedArray,
+  selectedArray,
+  changeHandler,
+  editing,
+  setEditing,
+  nameInput,
+  setNameInput,
+  setLastNameInput,
+  setEmailInput,
+  setPhoneInput,
+  setContact,
+}) {
+  // console.log(contacts,showCheckbox);
   return (
     <div className={Styles.container}>
       <h3>Contacts List</h3>
@@ -38,6 +29,20 @@ function ContactsList({ contacts, setContacts }) {
             data={contact}
             contacts={contacts}
             setContacts={setContacts}
+            showCheckbox={showCheckbox}
+            setSelectedArray={setSelectedArray}
+            selectedArray={selectedArray}
+            editing={editing}
+            setEditing={setEditing}
+            nameInput={nameInput}
+            setNameInput={setNameInput}
+            setLastNameInput={setLastNameInput}
+            setEmailInput={setEmailInput}
+            setPhoneInput={setPhoneInput}
+            setContact={setContact}
+            changeHandler={changeHandler}
+            contact={contact}
+
           />
         ))}
       </ul>

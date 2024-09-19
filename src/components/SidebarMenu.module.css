@@ -13,7 +13,11 @@
   padding: 10px;
   border-radius: 50%;
   position: absolute;
-  top: 80px;
-  right: 30%;
+  top: 50px;
+  left:100px;
   box-shadow: -2px -2px 5px silver, 2px 2px 5px silver;
+}
+.container {
+  width: calc(100% - 900px);
+  position: relative;
 }
